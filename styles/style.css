@@ -1,0 +1,450 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@200;300;400;500;600;700;800;900&family=Rubik+Doodle+Shadow&display=swap');
+
+:root {
+    --main-color: #1a1a1a;
+    --second-color: #361a49;
+    --colors-hover: #ff55f6;
+    --colors-shadow: #ffb6e5;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+body {
+    background-color: var(--main-color);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#top {
+    background-color: var(--second-color);
+    min-height: 80px;
+    box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.7);
+}
+
+#top  div  ul  li  a:hover {
+    scale: 1.12;
+    transition: .3s;
+    color: var(--colors-hover);
+    text-shadow: 2px 2px 4px var(--colors-shadow);
+}
+
+.murilo:hover {
+    scale: 1.02;
+    transition: .3s;
+}
+
+#top  div  ul  li  a {
+    color: white;
+    transition: .3s;
+}
+
+.murilo {
+    transition: .3s;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    background-color: var(--main-color);
+    /*border: 3px solid red;*/
+}
+
+#first-time {
+    text-align: center;
+}
+
+#first-time div img {
+    margin-top: 20px;
+    width: 300px;
+    border-radius: 20px 20px 0px 0px;
+    margin-top: 40px;
+    transition: .25s;
+}
+
+#first-time div img:hover {
+    scale: 1.02;
+    box-shadow: 0px -1px 3px 1px var(--colors-hover);
+    transition: .25s;
+}
+
+#first-time div #hello-iam{
+    color: #fff;
+    font-size: 18px;
+    padding-top: 60px;
+}
+
+#first-time div h3 {
+    color: var(--colors-hover);
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+#first-time div div button {
+    width: 150px;
+    height: 40px;
+    border-radius: 7px;
+    border: 1px solid var(--colors-hover);
+    background-color: var(--main-color);
+    margin: 0px 10px 0px 10px;
+    transition: .3s;
+}
+
+#first-time div div button:hover {
+    scale: 1.1;
+    transition: .5s;
+    background-color: var(--colors-hover);
+    color: var(--main-color);
+}
+
+#first-time div div button a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#myname {
+    font-size: 36px;
+    color: #fff;
+}
+
+#marking-1 {
+    padding-top: 5px;
+    font-size: 14px;
+    margin: 0 auto;
+    width: 320px;
+    background-color: var(--second-color);
+    height: 30px;
+    border-radius: 10px 10px 20px 20px;
+    color: #fff;
+}
+
+#line {
+    background-color: var(--colors-hover);
+    width: 90%;
+    height: 1px;
+    margin: 70px auto;
+    color: var(--main-color);
+}
+
+#experience {
+    height: 40vh;
+}
+
+#experience h2 {
+    padding: 20px;
+    text-align: center;
+    color: var(--colors-hover);
+    font-size: 30px;
+}
+
+#experience h3 {
+    text-align: center;
+    color: #fff;
+    font-size: 22px;
+    padding: 10px;
+}
+
+.icons {
+    background-color: var(--second-color);
+    width: 120px;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 10px;
+    transition: .4s;
+}
+
+.icons:hover {
+    scale: 1.07;
+    transition: .4s;
+    border: 2px solid var(--colors-hover);
+}
+
+#experience-icons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#line-2 {
+    background-color: var(--colors-hover);
+    width: 90%;
+    height: 1px;
+    margin: 50px auto;
+    color: var(--main-color);
+}
+
+#about {
+    text-align: center;
+    height: 40vh; 
+}
+
+#about h2 {
+    font-size: 30px;
+    color: var(--colors-hover);
+}
+
+#about div img {
+    width: 220px;
+    border-radius: 30px 0px 30px 0px;
+    margin: 20px;
+}
+
+#about div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about div p {
+    color: #fff;
+    max-width: 500px;
+    text-indent: 20px;
+}
+
+#line-3 {
+    background-color: var(--colors-hover);
+    width: 90%;
+    height: 1px;
+    margin: 50px auto;
+    color: var(--main-color);
+}
+
+#contact {
+    height: 20vh;
+    text-align: center;
+}
+
+#contact a img {
+    width: 80px;
+    transition: .4s;
+}
+
+#contact a img:hover {
+    scale: 1.07;
+    transition: .4s;
+}
+
+#portfolio {
+    height: 40vh;
+}
+
+.slider {
+    margin: 0 auto;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.slides {
+    width: 400%;
+    height: 400px;
+    display: flex;
+}
+
+.slides input {
+  display: none;  
+}
+
+.slide {
+    width: 25%;
+    position: relative;
+    transition: 1.5s;
+}
+
+.slide img {
+    width: 800px;
+}
+
+.manual-navigation {
+    position: absolute;
+    width: 800px;
+    margin-top: -48px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: 2px solid var(--colors-hover);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .7s;
+}
+
+.manual-btn:not(:Last-child) {
+    margin-right: 20px;
+}
+
+.manual-btn:hover {
+    background-color: var(--colors-hover);
+}
+ 
+#radio1:checked ~ .first {
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .first {
+    margin-left: -50%;
+}
+
+#radio4:checked ~ .first {
+    margin-left: -75%;
+}
+
+.navigation-auto div {
+    margin-top: -7px;
+    border: 2px solid var(--colors-hover);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .7s;
+}
+
+.navigation-auto {
+    position: absolute;
+    width: 800px;
+    margin-top: 360px;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-auto div:not(:last-child) {
+    margin-right: 20px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1 {
+    background-color: var(--colors-hover);
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2 {
+    background-color: var(--colors-hover);
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3 {
+    background-color: var(--colors-hover);
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4 {
+    background-color: var(--colors-hover);
+}
+
+#line-4 {
+    background-color: var(--colors-hover);
+    width: 90%;
+    height: 1px;
+    margin: 50px auto;
+    color: var(--main-color);
+}
+
+
+
+/*--------------- Medias ----------------*/
+
+/*Telas HD*/
+@media only screen and (max-height: 768px) { 
+    #portfolio {
+        height: 58vh;
+    }
+}
+
+/*Ipad*/
+@media only screen and (max-width: 990px) {
+    #top  div  ul  li  a:hover {
+        scale: 1;
+        transition: .3s;
+        color: var(--colors-hover);
+        text-shadow: 2px 2px 4px #ffb6e5;
+    }
+    
+}
+
+/*Celular*/
+@media only screen and (max-width: 500px) {
+    #first-time div div button {
+        margin: 5px 10px 5px 10px;
+    }
+
+    #myname {
+        font-size: 30px;
+    }
+
+    #about {
+        height: 50vh; 
+    }
+
+    #about div {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #about div p {
+        width: 300px;
+    }
+
+    .slider {
+        margin: 0 auto;
+        width: 400px;
+        overflow: hidden;
+    }
+
+    #portfolio {
+        width: 100vw;
+        height: 22vh;
+    }
+
+    .slide img {
+        width: 380px;
+        margin-left: 15px;
+    }
+
+    .navigation-auto div {
+        display: none;
+    }
+    
+    .navigation-auto {
+        display: none;
+    }
+   
+
+}
+
+/*Celular menor*/
+@media only screen and (min-width: 420px) {
+    #experience {
+        height: 45vh;
+    }
+}
+
+/*Celuluar ainda menor*/
+@media only screen and (max-width: 418px) {
+    #experience {
+        height: 65vh;
+    }
+
+    #about {
+        height: 50vh;
+    }
+
+}
+
+/*Iphone SE*/
+@media only screen and (max-width: 380px) {
+    #experience {
+        height: 85vh;
+    }
+
+    #about {
+        height: 65vh;
+    }
+
+}
